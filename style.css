@@ -1,0 +1,816 @@
+*{
+    margin: o;
+    padding: 0;
+
+}
+
+body{
+    /* دمج لونين */
+    background: linear-gradient(#200016, #10001f);
+
+    /* اللون يتناسق مع طول الشاشة */
+    height: 100vh;
+
+    font-family: Arial, Helvetica, sans-serif
+}
+
+a{
+    /* شيل الخط من تحت اللينكات */
+    text-decoration: none;
+
+    color: #fff
+}
+
+header{
+    /* يظهر  الكلام */
+    position: fixed;
+    width: 95%;
+
+    z-index: 10;
+
+    display:flex; 
+    /* انقل اللينكات لليمين بعيدا عن لوغو */
+    justify-content: space-between;
+    /* تنزيل اللوغو للاسفل */
+    align-items: center;
+
+    margin: 30px
+}
+
+/* تنسيق اللوغو */
+header .logo{
+    font-size: 30px;
+    /* حروف كبيرة */
+    text-transform: uppercase;
+
+    background: linear-gradient(lime,blue);
+    padding: 5px;
+    border-radius: 20px;
+    box-shadow: 10px 10px rgb(44, 35, 35);
+    border: 2px solid white
+}
+
+
+header ul{
+    /* على صف واحد */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+/* ازالة النقط */
+    list-style: none;
+}
+
+header ul li{
+    margin-right: 30px;
+}
+
+
+header ul li a{
+    /* مشان الهوفر */
+    padding: 6px 15px;
+    border-radius: 20px
+}
+
+
+header ul li a:hover, .active{
+    background: rgb(6, 248, 18);
+    color: #200016;
+}
+
+
+/* تنسيق الصور */
+.script{
+    position: relative;
+    height: 100vh;
+    width: 100%;
+
+      /* بالاخير حتى تظهر كلمة نوفيل في النص ورا القمر */
+      display: flex;
+      /* محور x */
+      justify-content: center;
+      /* محور y */
+      align-items: center;
+      overflow: hidden;
+}
+
+.script img{
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+
+  
+
+    /* اصلاح شد الصورة */
+    object-fit: cover
+}
+
+#moon{
+    /* تعديل صورة القمر بالفوتوشوب */
+    mix-blend-mode: difference;
+    /* نزلنا صورة القمر على محور y */
+    transform: translateY(80px)
+}
+
+.nouvil{
+    color: #fff;
+    font-size: 20px;
+    text-transform: uppercase;
+    /* من المين ظبطنا موقعها */
+
+/* طالعناها على محور y */
+    transform: translateY(-140px)
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* غير هام */
+.script::after{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    height: 100px;
+    width: 100%;
+    background: linear-gradient(to top,#200016, transparent)
+}
+
+
+
+
+
+
+
+a{
+    color: gold;
+    font-weight: bold
+}
+
+
+
+
+
+
+
+.a-1{
+    color: gold
+}
+
+.h-2{
+    color: gold;
+    background: linear-gradient(rgb(0, 47, 255),black);
+    position: relative;
+     /* محور x */
+     justify-content: center;
+     align-items: center;
+     display: flex;
+     position: relative;
+    padding: 5px;
+    width: 400px;
+    margin: auto;
+    border: 3px solid goldenrod;
+    border-radius: 10px
+}
+
+
+
+.h-1{
+    color: yellow;
+    background: linear-gradient(rgb(0, 47, 255),black);
+    position: relative;
+     /* محور x */
+     justify-content: center;
+     align-items: center;
+     display: flex;
+     position: relative;
+    padding: 5px;
+    margin: auto;
+    border: 3px solid goldenrod;
+    border-radius: 50px;
+    font-size: 25px
+}
+
+.h-11{
+    color: #faea07;
+    background: linear-gradient(rgb(96, 101, 126),rgb(165, 29, 29));
+    font-size: 25px;
+    position: relative;
+    /* محور x */
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    margin-left: auto;
+    margin-top: 20px;
+    padding: 40px;
+    border: #155df7 solid 3px;
+    font-weight: bold
+}
+
+audio{
+    position: relative;
+    margin-left: 74px;
+}
+
+
+
+.content-1 .p-11{
+    color: rgb(21, 115, 255);
+    font-size: 30px;
+    font-weight: bold;
+    border: #e4f318 solid 4px;
+    padding: 4px;
+    text-align: center;
+    background: #0c0f0c;
+    border-radius: 10px
+}
+
+.content-12 .p-12{
+    color: rgb(21, 115, 255);
+    font-size: 30px;
+    font-weight: bold;
+    border: #e2fa0d solid 4px;
+    padding: 5px;
+    text-align: center;
+    background: #0c0f0c;
+    border-radius: 10px
+}
+
+.content p{
+    color: #fff;
+    font-size: 30px;
+    font-weight: bold;
+    border: #744a9b solid 6px;
+    padding: 4px;
+    text-align: right;
+    background: #632e52
+}
+
+
+.img-3{
+    position: relative;
+    left: -10%;
+}
+
+.img-4{
+    position: relative;
+    left: 30%;
+}
+
+
+.img-5{
+    position: relative;
+    left: 30%;
+    top: -76%
+}
+
+
+
+
+.div-2 h2{
+    color: yellow;
+    background: linear-gradient(rgb(0, 47, 255),black);
+    position: relative;
+     /* محور x */
+     justify-content: center;
+     align-items: center;
+     display: flex;
+     position: relative;
+    padding: 10px;
+    margin: auto;
+    border: 3px solid goldenrod;
+    border-radius: 50px;
+    font-size: 25px
+}
+
+
+.div-2{
+    position: relative;
+    top: -80%;
+}
+
+.div-2 p{
+    color: #fff;
+    font-size: 30px;
+    font-weight: bold;
+    border: #744a9b solid 6px;
+    padding: 4px;
+    text-align: right;
+    background: #632e52
+}
+
+.div-2 .p-1{
+    color: rgb(40, 211, 24);
+    font-size: 30px;
+    font-weight: bold;
+    border: #574469 solid 6px;
+    padding: 4px;
+    text-align: center;
+    background: #584051
+}
+
+
+.img-6{
+    position: relative;
+    left: 10%;
+    top: -80%
+}
+
+
+
+.img-7{
+    position: relative;
+    left: 30%;
+    top: -80%
+}
+
+
+
+.div-3{
+    position: relative;
+    top: -80%;
+}
+
+
+.div-3 h3{
+    color: yellow;
+    background: linear-gradient(rgb(0, 47, 255),black);
+    position: relative;
+     /* محور x */
+     justify-content: center;
+     align-items: center;
+     display: flex;
+     position: relative;
+    padding: 10px;
+    margin: auto;
+    border: 3px solid goldenrod;
+    border-radius: 50px;
+    font-size: 25px
+}
+
+
+
+.div-3 p{
+    color: #fff;
+    font-size: 30px;
+    font-weight: bold;
+    border: #744a9b solid 6px;
+    padding: 4px;
+    text-align: right;
+    background: #632e52
+}
+
+
+
+.div-3 .p-1{
+    color: rgb(40, 211, 24);
+    font-size: 30px;
+    font-weight: bold;
+    border: #574469 solid 6px;
+    padding: 4px;
+    text-align: center;
+    background: #584051
+}
+
+
+.img-9{
+    position: relative;
+    left: 30%;
+    top: -90%
+}
+
+
+
+.div-4{
+    position: relative;
+    top: -100%;
+}
+
+.div-4 h3{
+    color: yellow;
+    background: linear-gradient(rgb(0, 47, 255),black);
+    position: relative;
+     /* محور x */
+     justify-content: center;
+     align-items: center;
+     display: flex;
+     position: relative;
+    padding: 10px;
+    margin: auto;
+    border: 3px solid goldenrod;
+    border-radius: 50px;
+    font-size: 25px
+}
+
+
+.div-4 p{
+    color: #fff;
+    font-size: 30px;
+    font-weight: bold;
+    border: #744a9b solid 6px;
+    padding: 4px;
+    text-align: right;
+    background: #632e52
+}
+
+
+
+.div-4 .p-1{
+    color: rgb(40, 211, 24);
+    font-size: 30px;
+    font-weight: bold;
+    border: #574469 solid 6px;
+    padding: 4px;
+    text-align: center;
+    background: #584051
+}
+
+
+.div-5 h2{
+    color: yellow;
+    background: linear-gradient(rgb(0, 47, 255),black);
+    position: relative;
+     /* محور x */
+     justify-content: center;
+     align-items: center;
+     display: flex;
+     position: relative;
+    padding: 10px;
+    margin: auto;
+    border: 3px solid goldenrod;
+    border-radius: 50px;
+    font-size: 25px
+}
+
+
+.div-5{
+    position: relative;
+    top: -90%;
+}
+
+.div-5 p{
+    color: #fff;
+    font-size: 30px;
+    font-weight: bold;
+    border: #744a9b solid 6px;
+    padding: 4px;
+    text-align: right;
+    background: #632e52
+}
+
+
+
+.img-10{
+    position: relative;
+    left: 10%;
+    top: -90%
+}
+
+
+.img-11{
+    position: relative;
+    left:20%;
+    top: -90%
+}
+
+
+
+.div-9{
+    position: relative;
+    top: -90%;
+}
+
+
+.div-9 p{
+    color: rgb(13, 236, 13);
+    font-size: 30px;
+    font-weight: bold;
+    border: #c5b803 solid 3px;
+    padding: 4px;
+    text-align: center;
+    background: #5c568b
+}
+
+
+.img-13{
+    position: relative;
+    left:30%;
+    top: -90%;
+    font-weight: bold;
+    font-size: 30px;
+    padding: 10px
+}
+
+
+
+
+
+
+
+
+
+/* هاتف */
+@media (max-width:767px) {
+    /* تنسيق كامل للهيدير */
+/* تنسيق اللوغو */
+header .logo{
+    font-size: 25px;
+    position: absolute;
+    left: -5%;
+    top: -5%
+}
+
+header ul {
+    display: block;
+    padding: 5px;
+    margin: 10px;
+    margin-top: -2%
+}
+
+header ul li{
+  padding: 6px;
+
+}
+
+header ul li a{
+    /* مشان الهوفر */
+    padding: 5px 10px;
+    border-radius: 20px;
+}
+
+
+
+
+/* تنسيق الصور */
+.script{
+    position: relative;
+    height: 130vh;
+    width: 135%;
+
+}
+
+
+
+.i{
+    width: 100%;
+}
+
+
+
+.img-3{
+    position: relative;
+    left: -8%;
+}
+
+.img-4{
+    position: relative;
+    left: -40%;
+}
+
+
+.img-5{
+    position: relative;
+    left: 40%;
+    top: -130%
+}
+
+
+
+
+.nouvil{
+    color: rgb(167, 126, 126);
+    font-size: 15px;
+    text-transform: uppercase;
+    /* من المين ظبطنا موقعها */
+
+/* طالعناها على محور y */
+    transform: translateY(-100px)
+}
+
+
+.h-11{
+    color: #c5b803;
+    background: linear-gradient(rgb(40, 68, 206),black);
+    font-size: 19px;
+    position: relative;
+    /* محور x */
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    margin: auto;
+    padding: 6px;
+}
+
+audio{
+    position: relative;
+    left: 0%;
+}
+
+
+}
+
+
+
+
+
+
+
+
+
+
+/* small screen 2 */
+@media (min-width:768px) and (max-width:991px) {
+/* تنسيق للهيدير */
+header ul {
+    position: relative;
+    margin-top: 3%;
+    left: -8%
+}
+
+header ul li{
+margin: auto  
+  }
+
+  header ul li a{
+    /* مشان الهوفر */
+    padding: 5px 10px;
+}
+
+header ul li a:hover, .active{
+margin: 2px
+}
+
+
+.i{
+    width: 100%
+}
+
+
+.img-3{
+    position: relative;
+    left: -8%;
+}
+
+.img-4{
+    position: relative;
+    left: 10%;
+    top: -40%
+}
+
+
+.img-5{
+    position: relative;
+    left: 40%;
+    top: -80%
+}
+
+
+
+.nouvil{
+    color: rgb(167, 126, 126);
+    font-size: 15px;
+    text-transform: uppercase;
+    /* من المين ظبطنا موقعها */
+
+/* طالعناها على محور y */
+    transform: translateY(-100px)
+}
+
+
+audio{
+    position: relative;
+    left: 30%;
+}
+
+
+}
+
+
+
+
+
+
+
+/* medium screen */
+@media (min-width:992px) {
+   /* تنسيق للهيدير */
+header ul {
+    position: relative;
+    margin-top: 3%;
+    left: -8%
+}
+
+header ul li{
+margin: auto  
+  }
+
+  header ul li a{
+    /* مشان الهوفر */
+    padding: 5px 10px;
+}
+
+header ul li a:hover, .active{
+margin: 2px
+}
+
+    
+.i{
+    width: 100%
+}
+
+
+
+
+audio{
+    position: relative;
+    left: 35%;
+}
+
+
+
+
+}
+
+
+
+/* large screen */
+@media (min-width:1200px) {
+
+    header ul {
+        position: relative;
+      top: -23px;
+        left: 1%
+    }
+
+    /* تنسيق اللوغو */
+header .logo{
+    font-size: 25px;
+    position: relative;
+
+    top: -20px
+}
+
+/* صورة */
+.script img{
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+
+    /*  شد الصورة */
+    object-fit: unset
+}
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
